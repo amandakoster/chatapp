@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
+//users route -- create user
 app.post('/users', (req,res) =>{
   const {username} = req.body
   chatkit
@@ -31,6 +32,7 @@ app.post('/users', (req,res) =>{
   })
 })
 
+//auth route -- auth user with token
 app.post('authenticate', (res, req) => {
   const authData = chatkit.authenticate({ userId: req.query.user_id})
   res.status(authData.status).send(authData.body)
