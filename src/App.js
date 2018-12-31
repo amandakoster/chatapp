@@ -31,14 +31,12 @@ onUsernameSubmitted(username){
 
 render() {
   if(this.state.currentScreen === 'WhatIsYourUsernameScreen'){
-  return <UsernameForm onSubmit={this.onUsernameSubmitted} />
-  }
-  if(this.state.currentScreen === 'ChatScreen'){
-    return <ChatScreen />
+    return <UsernameForm onSubmit={this.onUsernameSubmitted} />
+    }
+    if(this.state.currentScreen === 'ChatScreen'){
+      return <ChatScreen />
+    }
   }
 }
-}
-
-
 
 export default App
