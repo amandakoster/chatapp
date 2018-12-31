@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      currentUsername: '',
+      currentUsername: 'test',
       currentScreen: 'WhatIsYourUsernameScreen'
     }
 this.onUsernameSubmitted = this.onUsernameSubmitted.bind(this)
